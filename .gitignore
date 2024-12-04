@@ -1,2 +1,4 @@
 build/
 .vscode/
+include/ae2f/mov/Float.h
+include/ae2f/mov/Int.h
