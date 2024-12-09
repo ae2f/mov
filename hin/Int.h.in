@@ -1,3 +1,7 @@
+/// @file
+/// This file is affected by pre-defined value.
+/// @see ____ae2f_Core_Def_CMAKE::ae2f_mov_IS_64
+
 #ifndef ae2f_mov_Int_h
 #define ae2f_mov_Int_h
 
@@ -5,12 +9,35 @@
 #include <ae2f/Call.h>
 
 #if @ae2f_mov_IS_64@
+/// @brief
+/// Pre-defined size of two following integer types.
+/// @see ____ae2f_Core_Def_CMAKE::ae2f_mov_IS_64
+/// @see ae2f_MovScalar_t
+/// @see ae2f_MovVec_t
 #define ae2f_MovBitCount 64
+
+/// @brief 
+/// Pre-defined unsigned integer type for scalar
 typedef uint64_t ae2f_MovScalar_t;
+
+/// @brief 
+/// Pre-defined signed integer type for vector
 typedef int64_t ae2f_MovVec_t;
 #else 
+
+/// @brief
+/// Pre-defined size of two following integer types.
+/// @see ____ae2f_Core_Def_CMAKE::ae2f_mov_IS_64
+/// @see ae2f_MovScalar_t
+/// @see ae2f_MovVec_t
 #define ae2f_MovBitCount 32
+
+/// @brief 
+/// Pre-defined unsigned integer type for scalar
 typedef uint32_t ae2f_MovScalar_t;
+
+/// @brief 
+/// Pre-defined signed integer type for vector
 typedef int32_t ae2f_MovVec_t;
 #endif
 #endif
