@@ -1,7 +1,6 @@
-#define ON 1
-#define OFF 0
+#include <Core.cmake.hpp>
 
-namespace ____ae2f_Core_Def_CMAKE {
+namespace ___DOC_CMAKE {
     
     /// @brief 
     /// Affects the integer default types. \n
@@ -9,5 +8,5 @@ namespace ____ae2f_Core_Def_CMAKE {
     /// @see ae2f_MovVec_t
     /// Default value is OFF.
     /// @see ae2f/mov/Int.h
-    constexpr bool ae2f_mov_IS_64 = OFF;
+    option ae2f_mov_IS_64 = OFF;
 }
