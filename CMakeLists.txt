@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(mov VERSION 0.5.3)
+project(mov VERSION 0.6.3)
 enable_testing()
 option(ae2f_mov_IS_64 "Would you use the Prm-Vec as 64-bit integer?" OFF)
 if(NOT TARGET ${PROJECT_NAME})
