@@ -4,8 +4,6 @@ enable_testing()
 option(ae2f_mov_IS_64 "Would you use the Prm-Vec as 64-bit integer?" OFF)
 if(NOT TARGET ${PROJECT_NAME})
 
-add_subdirectory(mod/ae2f/Core)
-
 if(ae2f_float STREQUAL "float")
 set(ae2f_float_id 0)
 elseif(ae2f_float STREQUAL "double")
