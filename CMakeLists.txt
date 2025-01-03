@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
-project(mov VERSION 0.6.4)
+project(mov VERSION 0.7.4)
 enable_testing()
 option(ae2f_mov_IS_64 "Would you use the Prm-Vec as 64-bit integer?" OFF)
 if(NOT TARGET ${PROJECT_NAME})
 
 include(cmake/Core.cmake)
-ae2f_CoreLibFetch(ae2f Core Rel-v6.14.11)
+ae2f_CoreLibFetch(ae2f Core Rel-v6.15.11)
 
 if(ae2f_float STREQUAL "float")
 set(ae2f_float_id 0)
