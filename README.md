@@ -1,5 +1,5 @@
 # ae2f::mov
-- Rel-v0.7.4
+- Rel-v0.8.4
 
 # See Also
 - ae2f::Core-Template
